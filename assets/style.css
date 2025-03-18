@@ -1,0 +1,341 @@
+:root {
+  --gray-900: #141414;
+  --gray-800: #1f1f1f;
+  --gray-700: #333333;
+  --white: #ffffff;
+  --green: #c4f82a;
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-050: 4px;
+
+  --text-preset-1: 24px;
+  --text-preset-2: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  width: 1440px;
+  height: 960px;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-900);
+}
+
+#card {
+  display: flex;
+  max-width: 384px;
+  padding: var(--spacing-500);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+  border-radius: 12px;
+  background: var(--gray-800);
+}
+
+#profile-pic {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  background: url(images/avatar-jessica.jpeg) lightgray 50% cover no-repeat;
+}
+
+#name-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-050);
+  align-items: stretch;
+}
+
+#name-location h1 {
+  align-self: stretch;
+  color: var(--white);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--text-preset-1);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+#name-location p {
+  align-self: stretch;
+  color: var(--green);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--text-preset-2);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#bio {
+  align-self: stretch;
+  color: var(--white);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--text-preset-2);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200);
+  align-self: stretch;
+}
+
+#links a {
+  width: 304px;
+  display: flex;
+  padding: var(--spacing-150);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100);
+  align-items: stretch;
+  border-radius: 8px;
+  background: var(--gray-700);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--text-preset-2);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#links a:hover {
+  background: var(--green);
+  color: var(--gray-700);
+}
+
+/* RESPONSIVE FOR TABLETS */
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    width: 768px;
+    padding: var(--spacing-500);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--gray-900);
+  }
+
+  #card {
+    display: flex;
+    width: 384px;
+    max-width: 456px;
+    padding: var(--spacing-500);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    border-radius: 12px;
+    background: var(--gray-800);
+  }
+
+  #profile-pic {
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+    background: url(images/avatar-jessica.jpeg) lightgray 50% cover no-repeat;
+  }
+
+  #name-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-050);
+    align-self: stretch;
+  }
+
+  #name-location h1 {
+    align-self: stretch;
+    color: var(--white);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-1);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  #name-location p {
+    align-self: stretch;
+    color: var(--green);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  #bio {
+    align-self: stretch;
+    color: var(--white);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200);
+    align-self: stretch;
+  }
+
+  #links a {
+    width: 304px;
+    display: flex;
+    padding: var(--spacing-150);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100);
+    align-items: stretch;
+    border-radius: 8px;
+    background: var(--gray-700);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  #links a:hover {
+    background: var(--green);
+    color: var(--gray-700);
+  }
+}
+
+/* RESPONSIVE FOR SMARTPHONES */
+
+@media screen and (max-width: 375px) {
+
+  body {
+    display: flex;
+    width: 375px;
+    height: 812px;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--gray-900);
+  }
+
+  #card {
+    display: flex;
+    padding: var(--spacing-300);
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    border-radius: 12px;
+    background: var(--gray-800);
+    
+  }
+
+  #profile-pic {
+    width: 88px;
+    height: 88px;
+    border-radius: 999px;
+    background: url(images/avatar-jessica.jpeg) lightgray 50% cover no-repeat;
+  }
+
+  #name-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-050);
+    align-self: stretch;
+  }
+
+  #name-location h1 {
+    align-self: stretch;
+    color: var(--white);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-1);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  #name-location p {
+    align-self: stretch;
+    color: var(--green);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  #bio {
+    align-self: stretch;
+    color: var(--white);
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200);
+    align-self: stretch;
+  }
+
+  #links a {
+    width: 304px;
+    display: flex;
+    padding: var(--spacing-150);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100);
+    align-items: stretch;
+    border-radius: 8px;
+    background: var(--gray-700);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-preset-2);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  #links a:hover {
+    background: var(--green);
+    color: var(--gray-700);
+  }
+}
